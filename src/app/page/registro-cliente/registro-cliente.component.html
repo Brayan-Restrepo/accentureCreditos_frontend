@@ -1,0 +1,36 @@
+<form [formGroup]="formRegistroCliente" novalidate="novalidate">
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <label>Identificación</label>
+        <input class="form-control" formControlName="identificacion">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input class="form-control" formControlName="nombre">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group">
+        <label>Apellido</label>
+        <input class="form-control" formControlName="apellido">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group">
+        <label>Fecha nacimiento</label>
+        <input type="text"
+          formControlName="fechaNacimiento"
+           placeholder="Fecha nacimiento"
+           class="form-control"
+           bsDatepicker>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-3">
+    <button class="btn btn-primary btn-sm" (click)="guardarRegistro()">Enviar</button>
+  </div>  
+</form>
