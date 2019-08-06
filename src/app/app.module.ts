@@ -10,12 +10,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SolicitudCreditoComponent } from './page/solicitud-credito/solicitud-credito.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RegistroClienteComponent,
+    SolicitudCreditoComponent,
   ],
   imports: [
     BrowserModule,

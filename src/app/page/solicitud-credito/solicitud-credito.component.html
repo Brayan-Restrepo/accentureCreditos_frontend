@@ -1,0 +1,37 @@
+<form [formGroup]="formSolicitudCredito" novalidate="novalidate">
+  <div class="row">
+    <div class="col-3">
+      <div class="form-group">
+        <label>Nombre empresa</label>
+        <input class="form-control" formControlName="nombreEmpresa">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group">
+        <label>NIT</label>
+        <input class="form-control" formControlName="nit">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group">
+        <label>Salario actual</label>
+        <input class="form-control" formControlName="salarioActual">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="form-group">
+        <label>Fecha ingreso</label>
+        <input type="text"
+          formControlName="fechaIngreso"
+           placeholder="Fecha ingreso"
+           class="form-control"           
+           [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"
+           bsDatepicker>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-3">
+    <button class="btn btn-primary btn-sm" (click)="guardarRegistro()">Registar</button>
+  </div>  
+</form>

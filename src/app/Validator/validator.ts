@@ -6,4 +6,9 @@ export class MyValidators {
         return Object.prototype.toString.call(c.value) !== '[object Date]' ? { 'dateInvalid': true } : null;
     }
 
+    static enteroPositivo(c: AbstractControl): { [key: string]: boolean } {
+        const  patron = /^\d*$/;
+        return !patron.test(c.value) ? { 'dateInvalid': true } : null;
+    }
+
 }
