@@ -24,13 +24,14 @@
         <input type="text"
           formControlName="fechaNacimiento"
            placeholder="Fecha nacimiento"
-           class="form-control"
+           class="form-control"           
+           [bsConfig]="{ dateInputFormat: 'YYYY-MM-DD' }"
            bsDatepicker>
       </div>
     </div>
   </div>
   
   <div class="col-3">
-    <button class="btn btn-primary btn-sm" (click)="guardarRegistro()">Enviar</button>
+    <button class="btn btn-primary btn-sm" (click)="guardarRegistro()">Registar</button>
   </div>  
 </form>
