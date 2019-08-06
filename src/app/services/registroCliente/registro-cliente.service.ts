@@ -12,7 +12,7 @@ export class RegistroClienteService {
     ) { }
 
   public postRegistro(data): Observable<any> {
-    return this._apiService.post('', data);
+    return this._apiService.post('registro/cliente', data);
   }
 
 }

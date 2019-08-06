@@ -12,6 +12,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SolicitudCreditoComponent } from './page/solicitud-credito/solicitud-credito.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,7 @@ import { SolicitudCreditoComponent } from './page/solicitud-credito/solicitud-cr
     ReactiveFormsModule,
     SweetAlert2Module.forRoot(),
     BsDatepickerModule.forRoot(),
+    HttpClientModule,
     BrowserAnimationsModule,
   ],
   providers: [],

@@ -13,7 +13,7 @@ export class ApiService {
   constructor(
     private http: HttpClient
     ) {
-      this.url = 'http://localhost:8090/';
+      this.url = 'http://localhost:8080/api/';
     }
 
     public get<T>(path: string): Observable<T> {
